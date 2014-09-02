@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+body {font-family:Arial, sans-serif; font-size:18px;}
+
+nav {overflow:auto; overflow-x:hidden; position:fixed; top:0; left:0; width:220px; height:100%;}
+nav .active {font-weight:bold;}
+
+#version:empty, #category:empty, #method:empty, #property:empty {display:none;}
+#version:before, #category:before, #method:before, #property:before {color:#005a9c; display:block; font-size:22px; margin-bottom:3px; margin-left:-20px;}
+
+#version:before {content:'Versões';}
+#category:before {content:'Categorias';}
+#method:before {content:'Métodos';}
+#property:before {content:'Propriedades';}
+
+#category li, #method li, #property li {cursor:pointer;}
+
+main {margin-left:250px;}
+
+div {border-bottom:1px dashed #f3f2f1; padding:20px 0 15px;}
+
+samp {color:#ccc; font-size:80%; float:right; margin-top:5px;}
+samp:before {content:'[';}
+samp:after {content:']';}
+
+h2 {margin:0 0 15px;}
+h3 {color:#005a9c; font-size:100%; font-weight:normal; margin:20px 0 5px;}
+
+q:before, q:after {display:none;}
+q {color:#a52a2a;}
+
+dfn {font-style:normal;}
+
+var {font-style:normal; font-weight:bold;}
+
+code {border:1px solid #ccc; display:block; margin-bottom:25px; padding:10px 15px; white-space:pre;}
+
+pre {background:#ffe; border:1px solid #ccc; color:#006; font-size:90%; padding:5px 15px;}
+
+p {margin:0 0 15px;}
+
+dl {margin:0;}
+dt {margin:0 0 3px;}
+dd {margin:0 25px 15px;}
+
+ol {list-style:none; margin:0; padding:0;}
+ol li {background:#f3f2f1; color:#666; display:inline-block; font-size:80%; margin:0 5px 3px 0; padding:2px 4px;}
+ol li:empty {padding-right:0;}
+ol li:before {content:attr(title); padding-right:4px;}
